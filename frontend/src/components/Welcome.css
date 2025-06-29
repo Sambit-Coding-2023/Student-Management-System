@@ -1,0 +1,136 @@
+.welcome-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.welcome-content {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.welcome-header h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.welcome-actions {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.demo-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.demo-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.demo-accounts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.demo-account {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  color: #666;
+  font-size: 0.9rem;
+  border-left: 4px solid #007bff;
+}
+
+.demo-account strong {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .welcome-content {
+    padding: 25px;
+  }
+  
+  .welcome-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .welcome-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .demo-accounts {
+    grid-template-columns: 1fr;
+  }
+}

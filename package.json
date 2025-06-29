@@ -1,0 +1,31 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive Student Management System built with React and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "keywords": [
+    "student-management",
+    "education",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
